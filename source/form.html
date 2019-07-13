@@ -24,14 +24,100 @@
                     <a class="navigation__link">Каталог продукции</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="programms.html" class="navigation__link">Подбор программы</a>
+                    <a class="navigation__link">Подбор программы</a>
                 </li>
             </ul>
         </div>
     </nav>
 </header>
 <main class="page-content">
-
+    <section class="pick-program">
+        <h2 class="pick-program__title">Подбор программы</h2>
+        <p class="pick-program__motivation">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" class="pick__form form" method="get">
+            <fieldset class="form__part">
+                <legend class="visually-hidden">Информация о вашем коте:</legend>
+                <p class="form__wrapper">
+                    <label for="cat-name" class="form__label">Имя:*</label>
+                    <input type="text" class="form__input" id="cat-name" name="cat-name" placeholder="Барсик" required>
+                </p>
+                <p class="form__wrapper">
+                    <label for="weight" class="form__label">Вес:*</label>
+                    <input type="text" class="form__input" id="weight" name="weight" placeholder="7" required>
+                </p>
+                <p class="form__wrapper">
+                    <label for="years" class="form__label">Лет:</label>
+                    <input type="text" class="form__input" id="years" name="years" placeholder="7">
+                </p>
+            </fieldset>
+            <fieldset class="form__part">
+                <legend class="visually-hidden">Выберите подходящую программу:</legend>
+                <p class="form__wrapper">
+                    <label for="slim" class="form__label">Похудение</label>
+                    <input type="radio" class="visually-hidden form__radio" id="slim" name="program" value="Похудение" checked>
+                </p>
+                <p class="form__wrapper">
+                    <label for="mass" class="form__label">Набор массы</label>
+                    <input type="radio" class="visually-hidden form__radio" id="mass" name="program" value="Набор массы">
+                </p>
+                <p class="form__wrapper">
+                    <label for="need-help" class="form__label">Не знаю (нужен ваш совет)</label>
+                    <input type="radio" class="visually-hidden form__radio" id="need-help" name="program" value="Нужен совет">
+                </p>
+            </fieldset>
+            <fieldset class="form__part">
+                <legend class="form__title">Контактные данные (владельца кота)</legend>
+                <p class="form__wrapper">
+                    <label for="owner-mail" class="form__label">E-mail:*</label>
+                    <input type="email" class="form__input form__input--mail" id="owner-mail" name="mail" placeholder="kuklachev@gmail.com" required>
+                </p>
+                <p class="form__wrapper">
+                    <label for="owner-tel" class="form__label">Телефон:*</label>
+                    <input type="tel" class="form__input form__input--tel" id="owner-tel" name="tel" placeholder="8 (960) 900-60-90" required>
+                </p>
+            </fieldset>
+            <fieldset class="form__part">
+                <legend class="form__title">Комментарий</legend>
+                <p class="form__wrapper">
+                    <label for="message" class="visually-hidden"></label>
+                    <textarea name="message" id="message" cols="30" rows="10" class="form__message" placeholder="Расскажите обо всех повадках кота"></textarea>
+                </p>
+            </fieldset>
+            <fieldset class="form__part">
+                <legend class="visually-hidden">Дополнительно</legend>
+                <p class="form__wrapper">
+                    <label for="sweetener" class="form__label">Сахарозаменитель</label>
+                    <input type="checkbox" class="form__checkbox visually-hidden" id="sweetener" name="sweetener" checked>
+                </p>
+                <p class="form__wrapper">
+                    <label for="water" class="form__label">Питьевая вода</label>
+                    <input type="checkbox" class="form_checkbox visually-hiddeno" id="water" name="water">
+                </p>
+                <p class="form__wrapper">
+                    <label for="milk" class="form__label">Молоко</label>
+                    <input type="checkbox" class="form__checkbox visually-hidden" id="milk" name="milk">
+                </p>
+                <p class="form__wrapper">
+                    <label for="vitamins" class="form__label">Витамины</label>
+                    <input type="checkbox" class="form__checkbox visually-hidden" id="vitamins" name="vitamins">
+                </p>
+            </fieldset>
+            <button type="submit" class="form__button button">Отправить заявку</button>
+            <small class="form__footnote">* — Обязательные поля</small>
+        </form>
+    </section>
+     <section class="cooperation">
+         <div class="cooperation__wrapper">
+             <h2 class="cooperation__invite">Приглашаем к сотрудничеству дилеров!</h2>
+             <p class="cooperation__address">
+                 ул. Большая Конюшенная, д. 19/8
+                 Санкт-Петербург
+             </p>
+         </div>
+         <div class="cooperation__map map">
+             <img src="" alt="Мы находимся по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="map__image">
+         </div>
+     </section>
 </main>
 <footer class="page-footer">
     <div class="page-footer__wrapper">
