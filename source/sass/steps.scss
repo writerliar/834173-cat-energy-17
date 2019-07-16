@@ -1,0 +1,29 @@
+.steps {
+  margin-bottom: 40px;
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: "Arial", sans-serif;
+    text-align: left;
+    color: #444444;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+}
