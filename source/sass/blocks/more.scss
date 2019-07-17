@@ -1,0 +1,32 @@
+.more {
+  text-align: center;
+}
+
+.more__true {
+  display: block;
+  margin-bottom: 11px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  color: #111111;
+
+  text-transform: uppercase;
+}
+
+.more__description {
+  margin: 0;
+  margin-bottom: 22px;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: #444444;
+}

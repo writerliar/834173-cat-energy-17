@@ -1,0 +1,37 @@
+.banner {
+  margin-bottom: 3px;
+  padding: 30px 35px;
+
+  text-align: center;
+  background-color: #68b738;
+  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.banner__title {
+  margin: 0;
+  margin-bottom: 19px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.banner__slogan {
+  margin: 0;
+  padding: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
