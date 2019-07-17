@@ -11,4 +11,10 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68b738;
+
+  &--light {
+    color: #444444;
+
+    background-color: #f2f2f2;
+  }
 }

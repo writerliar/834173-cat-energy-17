@@ -2,65 +2,65 @@
   margin-bottom: 30px;
 
   text-align: center;
+}
 
-  &__button {
-    margin-bottom: 22px;
-  }
+.programms__button {
+  margin-bottom: 22px;
+}
 
-  &__card {
-    margin-bottom: 20px;
-    padding: 20px;
-    padding-bottom: 0;
+.programms__card {
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-bottom: 0;
 
-    background-color: #f2f2f2;
-  }
+  background-color: #f2f2f2;
+}
 
-  &__card:last-child {
-    margin-bottom: 0;
-  }
+.programms__card:last-child {
+  margin-bottom: 0;
+}
 
-  &__title {
-    margin: 0;
-    margin-bottom: 35px;
-    padding: 0;
+.programms__title {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 37px;
-    font-family: "Oswald", "Arial", sans-serif;
-    text-align: left;
-    color: #111111;
-    text-transform: uppercase;
-  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: left;
+  color: #111111;
+  text-transform: uppercase;
+}
 
-  &__description {
-    margin: 0;
-    margin-bottom: 23px;
-    padding: 0;
+.programms__description {
+  margin: 0;
+  margin-bottom: 23px;
+  padding: 0;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    font-family: "Arial", sans-serif;
-    text-align: left;
-    color: #444444;
-  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  text-align: left;
+  color: #444444;
+}
 
-  &__link {
-    display: block;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.programms__link {
+  display: block;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    font-family: "Oswald", sans-serif;
-    text-align: left;
-    color: #111111;
-    text-transform: uppercase;
-  }
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Oswald", sans-serif;
+  text-align: left;
+  color: #111111;
+  text-transform: uppercase;
 }
