@@ -1,4 +1,10 @@
-.product__Link {
+.product__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product__link {
   display: block;
 }
 
@@ -21,4 +27,32 @@
 
 .product__characteristics {
   margin-bottom: 23px;
+}
+
+.product__button {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .product__wrapper {
+    flex-direction: column;
+  }
+
+  .product__button {
+    width: auto;
+  }
+
+  .product__link {
+    margin-bottom: 39px;
+    text-align: center;
+  }
+
+  .product__name {
+    margin: 0 auto;
+    margin-bottom: 28px;
+  }
+
+  .product__characteristics {
+    margin-bottom: 33px;
+  }
 }
