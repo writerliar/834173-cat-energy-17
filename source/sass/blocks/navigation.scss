@@ -51,8 +51,12 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .navigation__list {
     width: 490px;
+  }
+
+  .navigation__link {
+    background-color: transparent;
   }
 }
