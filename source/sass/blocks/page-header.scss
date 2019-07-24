@@ -1,5 +1,20 @@
 .page-header {
+  display: flex;
+  flex-direction: column;
+
   text-align: center;
 
   background-color: #ffffff;
+}
+
+.page-header__logo {
+  display: block;
+  height: 39px;
+}
+
+@media (min-width: 768px) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

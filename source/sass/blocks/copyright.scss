@@ -1,3 +1,9 @@
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  padding: 31px 0;
+}
+
 .copyright__link-text {
   font-style: normal;
   font-weight: 400;
@@ -6,4 +12,11 @@
   font-family: "Arial", sans-serif;
   text-align: left;
   color: #444444;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    width: 162px;
+    padding: 0;
+  }
 }
