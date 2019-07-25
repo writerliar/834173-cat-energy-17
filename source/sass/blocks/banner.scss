@@ -86,18 +86,21 @@
 
 @media (min-width: 1440px) {
   .banner {
-    width: 720px;
+    width: 1247px;
     min-height: 696px;
     margin-top: -90px;
     margin-left: auto;
     margin-right: 0;
     margin-bottom: 80px;
+    background-position: right;
+    background-color: transparent;
+    background-image:
+      url("../../img/index-background-mobile@1x.jpg"),
+      linear-gradient(to left, #68b738 60%, #ffffff 40%);
     background-size: contain;
   }
 
   .banner__wrapper {
-    position: relative;
-    left: -500px;
     margin: 0;
     margin-top: 116px;
   }
