@@ -1,3 +1,8 @@
+.navigation {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .navigation__list {
   margin: 0;
   padding: 0;
@@ -31,4 +36,27 @@
 
 .navigation__item:last-child .navigation__link {
   border-bottom: 1px solid #e7e7e7;
+}
+
+@media (min-width: 768px) {
+  .navigation {
+    width: auto;
+    margin: 0;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    width: 407px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .navigation__list {
+    width: 490px;
+  }
+
+  .navigation__link {
+    background-color: transparent;
+  }
 }

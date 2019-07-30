@@ -1,4 +1,5 @@
 .steps {
+  margin: 0 20px;
   margin-bottom: 40px;
 }
 
@@ -27,4 +28,29 @@
 
 .steps__title {
   margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+  .steps {
+    margin: 0 30px;
+    margin-bottom: 50px;
+  }
+
+  .steps__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .steps__item {
+    max-width: 244px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .steps {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+  }
 }
