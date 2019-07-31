@@ -1,5 +1,10 @@
 .table {
   width: 140px;
+
+  &--extra {
+    width: 100%;
+    margin-bottom: 14px;
+  }
 }
 
 .table__value {
@@ -19,9 +24,29 @@
 @media (min-width: 768px) {
   .table {
     width: 100%;
+
+    &--extra {
+      width: auto;
+    }
   }
 
   .table__value {
     border-bottom: 1px solid rgba(68, 68, 68, 0.1);
+  }
+
+  .table--extra .table__value {
+    border-bottom: none;
+  }
+}
+
+@media (min-width: 1440px) {
+  .table--extra {
+    width: 285px;
+    margin-bottom: 0;
+  }
+
+  .table--extra + .product__button {
+    width: 245px;
+    margin-left: 39px;
   }
 }
