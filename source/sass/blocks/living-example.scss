@@ -5,6 +5,10 @@
   background-color: #f2f2f2;
 }
 
+.living-example__wrapper {
+  margin: 0 20px;
+}
+
 .living-example__text {
   margin: 0;
   margin-bottom: 27px;
@@ -18,6 +22,9 @@
 }
 
 .living-example__program {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   margin-bottom: 38px;
 }
 
@@ -60,4 +67,102 @@
   color: #111111;
   text-transform: uppercase;
   text-align: center;
+}
+
+.living-example__price br {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .living-example {
+    padding-bottom: 0;
+    border-top: 1px solid #f2f2f2;
+    background-color: #ffffff;
+  }
+
+  .living-example__wrapper {
+    margin: 0 30px;
+  }
+
+  .living-example__lost-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 250px;
+  }
+
+  .living-example__text {
+    width: 100%;
+  }
+
+  .living-example__program {
+    justify-content: flex-start;
+    width: auto;
+  }
+
+  .living-example__price {
+    text-align: right;
+  }
+
+  .living-example__price br {
+    display: block;
+  }
+
+  .living-example__background {
+    padding-bottom: 75px;
+    margin: 0 -30px;
+    background-color: #f2f2f2;
+  }
+
+  .living-example__slider {
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .living-example {
+    padding: 0;
+    border: none;
+    background-image: linear-gradient(to top, #f2f2f2 70%, #ffffff 30%);
+  }
+
+  .living-example__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .living-example__title {
+    margin-bottom: 66px;
+  }
+
+  .living-example__wrapper-column {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 75px;
+    padding-top: 70px;
+  }
+
+  .living-example__lost-wrapper {
+    margin-bottom: 0;
+    width: 430px;
+  }
+
+  .living-example__price {
+    margin-bottom: 0;
+  }
+
+  .living-example__price br {
+    display: none;
+  }
+
+  .living-example__background {
+    margin: 0;
+    background-color: transparent;
+  }
+
+  .living-example__slider {
+    width: 636px;
+    margin: 0;
+    text-align: center;
+  }
 }

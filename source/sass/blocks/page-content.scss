@@ -15,6 +15,7 @@
 }
 
 .page-content__motivation {
+  margin: 0 20px;
   margin-bottom: 39px;
 
   font-style: normal;
@@ -27,10 +28,25 @@
   text-transform: uppercase;
 }
 
+.page-content__motivation br {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .page-content__title {
     margin-left: 33px;
     margin-right: 33px;
+  }
+
+  .page-content__motivation {
+    width: 324px;
+    margin: 0 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .page-content__motivation br {
+    display: block;
   }
 }
 
@@ -39,5 +55,11 @@
     width: 1220px;
     margin: 0 auto;
     margin-bottom: 156px;
+  }
+
+  .page-content__motivation {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 69px;
   }
 }
