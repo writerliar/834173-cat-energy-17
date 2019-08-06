@@ -1,14 +1,15 @@
 .programms {
-  margin: 20px;
-  margin-top: 0;
+  margin: 0 20px;
+  margin-bottom: 17px;
 
   text-align: center;
 }
 
 .programms__card {
   margin-bottom: 20px;
-  padding: 20px;
-  padding-bottom: 22px;
+  padding-top: 31px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   background-color: #f2f2f2;
 }
@@ -18,9 +19,11 @@
 }
 
 .programms__title {
+  position: relative;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 28px;
   padding: 0;
+  padding-left: 71px;
 
   font-style: normal;
   font-weight: 400;
@@ -30,12 +33,43 @@
   text-align: left;
   color: #111111;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 1px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
+
+  &::after {
+    position: absolute;
+  }
+
+  &--slim::after {
+    content: url("../../img/icon-cat-slim.svg");
+    top: -9px;
+    left: 10px;
+    width: 35px;
+    height: 49px;
+  }
+
+  &--mass::after {
+    content: url("../../img/icon-cat-pro.svg");
+    top: 3px;
+    left: -7px;
+    width: 67px;
+    height: 28px;
+  }
 }
 
 .programms__description {
   margin: 0;
-  margin-bottom: 23px;
   padding: 0;
+  padding-bottom: 22px;
 
   font-style: normal;
   font-weight: 400;
@@ -44,13 +78,15 @@
   font-family: "Arial", sans-serif;
   text-align: left;
   color: #444444;
+  border-bottom: 1px solid rgba(34, 34, 34, 0.1);
 }
 
 .programms__link {
+  position: relative;
   display: block;
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 
   font-style: normal;
   font-weight: 400;
@@ -60,6 +96,58 @@
   text-align: left;
   color: #111111;
   text-transform: uppercase;
+  transition: all 0.3s;
+
+  &--arrow::after {
+    content: url("../../img/icon-right-arrow-long.svg");
+    position: absolute;
+    top: 18px;
+    left: 97px;
+    width: 25px;
+    height: 12px;
+    transition: all 0.3s;
+  }
+
+  &--arrow:hover::after {
+    content: url("../../img/icon-right-arrow-verylong.svg");
+    width: 34px;
+  }
+
+  &--arrow:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1439px) {
+  .programms__title {
+    padding-left: 0;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      top: 16px;
+      left: auto;
+      right: 0;
+    }
+
+    &::after {
+      left: auto;
+    }
+
+    &--slim::after {
+      top: 4px;
+      right: 30px;
+      width: 141px;
+      height: 194px;
+    }
+
+    &--mass::after {
+      top: 59px;
+      right: -35px;
+      width: 268px;
+      height: 113px;
+    }
+  }
 }
 
 @media (min-width: 768px) {
@@ -69,15 +157,43 @@
   }
 
   .programms__card {
-    padding-left: 55px;
-    padding-top: 81px;
+    padding-left: 53px;
+    padding-top: 76px;
     padding-right: 62px;
-    padding-bottom: 62px;
+    padding-bottom: 41px;
     margin-bottom: 30px;
   }
 
+  .programms__title {
+    margin-bottom: 25px;
+    font-size: 36px;
+    line-height: 37px;
+  }
+
   .programms__description {
-    width: 371px;
+    padding-bottom: 0;
+    margin-bottom: 36px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+
+    &--slim {
+      width: 372px;
+    }
+
+    &--mass {
+      width: 341px;
+    }
+  }
+
+  .programms__link {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--arrow::after {
+      top: 17px;
+      left: 130px;
+    }
   }
 }
 
@@ -96,9 +212,9 @@
     margin-right: 80px;
     margin-bottom: 0;
     padding-left: 52px;
-    padding-top: 41px;
+    padding-top: 76px;
     padding-right: 56px;
-    padding-bottom: 62px;
+    padding-bottom: 41px;
     width: 570px;
   }
 
@@ -106,7 +222,33 @@
     margin-right: 0;
   }
 
+  .programms__title {
+    padding-left: 162px;
+    margin-bottom: 73px;
+
+    &::before {
+      top: -30px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim::after {
+      top: -37px;
+      left: 13px;
+      width: 71px;
+      height: 97px;
+    }
+
+    &--mass::after {
+      top: -8px;
+      left: -18px;
+      width: 134px;
+      height: 57px;
+    }
+  }
+
   .programms__description {
+    margin-bottom: 11px;
     width: auto;
   }
 }
