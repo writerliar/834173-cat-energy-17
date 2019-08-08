@@ -58,6 +58,10 @@
 }
 
 @media (min-width: 1300px) {
+  .page-header--inner {
+    margin-bottom: 75px;
+  }
+
   .page-header__wrapper {
     width: 1220px;
     margin: 0 auto;
