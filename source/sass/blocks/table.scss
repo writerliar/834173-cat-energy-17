@@ -8,6 +8,7 @@
 }
 
 .table__value {
+  padding: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -39,7 +40,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .table--extra {
     width: 285px;
     margin-bottom: 0;

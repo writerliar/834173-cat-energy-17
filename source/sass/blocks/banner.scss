@@ -69,7 +69,7 @@
   transform: translateX(-50%);
 }
 
-@media (min-width: 768px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1299px) {
   .banner {
     background: none;
   }
@@ -132,7 +132,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .banner-container {
     background-image: linear-gradient(to left, #64a93c 50%, #ffffff 50%);
   }

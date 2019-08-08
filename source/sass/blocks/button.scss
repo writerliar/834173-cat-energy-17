@@ -29,6 +29,15 @@
 
     background-color: #f2f2f2;
   }
+
+  &--light:hover,
+  &--light:focus {
+    background-color: #ededed;
+  }
+
+  &--light:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: 768px) {
