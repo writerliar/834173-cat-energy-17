@@ -38,28 +38,29 @@
   }
 
   .catalog__item {
-    margin-bottom: 140px;
-    border: 1px solid #ededed;
+    margin-bottom: 57px;
+    //border: 1px solid #ededed;
 
     &--toggle {
       width: 324px;
+      margin-top: 82px;
       display: flex;
     }
   }
 
   .catalog__product-card {
     width: 324px;
-    padding-left: 38px;
-    padding-right: 37px;
+    //padding-left: 38px;
+    //padding-right: 37px;
     padding-bottom: 40px;
     border: none;
-    background-color: #f2f2f2;
+    background-image: linear-gradient(to top, #f2f2f2 84%, #ffffff 26%);
   }
 
   .catalog__toggle {
-    padding-left: 30px;
-    padding-top: 55px;
-    padding-right: 30px;
+    padding-left: 37px;
+    padding-top: 53px;
+    padding-right: 36px;
     padding-bottom: 40px;
   }
 }

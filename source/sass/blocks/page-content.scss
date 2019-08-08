@@ -34,8 +34,12 @@
 
 @media (min-width: 768px) {
   .page-content__title {
-    margin-left: 33px;
+    margin-top: 0;
+    margin-left: 30px;
     margin-right: 33px;
+    margin-bottom: 83px;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   .page-content__motivation {

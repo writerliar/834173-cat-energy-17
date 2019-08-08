@@ -35,6 +35,10 @@
 @media (min-width: 768px) {
   .page-header {
     border-bottom: none;
+
+    &--inner {
+      margin-bottom: 55px;
+    }
   }
 
   .page-header__wrapper {
