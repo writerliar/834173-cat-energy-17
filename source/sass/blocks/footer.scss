@@ -1,5 +1,5 @@
 .page-footer {
-  margin-top: 26px;
+  //margin-top: 26px;
   padding-top: 39px;
 
   background-color: #f2f2f2;
@@ -33,7 +33,7 @@
 
 @media (min-width: 768px) {
   .page-footer {
-    padding-top: 58px;
+    padding-top: 50px;
     padding-bottom: 62px;
   }
 
@@ -54,6 +54,10 @@
 }
 
 @media (min-width: 1300px) {
+  .page-footer {
+    padding-top: 56px;
+  }
+
   .page-footer__wrapper {
     width: 1220px;
     margin: 0 auto;

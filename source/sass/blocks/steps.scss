@@ -106,7 +106,7 @@
       content: counter(li);
       position: absolute;
       top: -40px;
-      right: 15px;
+      right: -4px;
       font-family: "Oswald", "Arial", sans-serif;
       color: #f2f2f2;
       font-size: 281px;
@@ -114,6 +114,10 @@
       line-height: 281px;
       counter-increment: li;
       z-index: -1;
+    }
+
+    &:first-child::after {
+      right: 15px;
     }
   }
 
