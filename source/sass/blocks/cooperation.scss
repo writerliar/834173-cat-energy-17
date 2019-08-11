@@ -7,11 +7,14 @@
 }
 
 .cooperation__wrapper {
+  //justify-content: space-between;
+}
+
+.cooperation__card {
+  display: flex;
   padding-top: 28px;
   padding-bottom: 26px;
   margin: 0 20px;
-  display: flex;
-  //justify-content: space-between;
 }
 
 .cooperation__invite {
@@ -43,7 +46,7 @@
 }
 
 @media (min-width: 768px) {
-  .cooperation__wrapper {
+  .cooperation__card {
     justify-content: space-between;
     padding-top: 65px;
     padding-bottom: 56px;
@@ -73,7 +76,16 @@
   .cooperation__wrapper {
     position: absolute;
     top: 107px;
-    left: 40px;
+    left: 50%;
+    width: 1220px;
+    z-index: 2;
+    transform: translateX(-50%);
+  }
+
+  .cooperation__card {
+    //position: absolute;
+    //top: 107px;
+    //left: 0;
     bottom: 104px;
     padding-left: 76px;
     padding-top: 65px;
@@ -83,11 +95,11 @@
     width: 570px;
     background-color: #ffffff;
     box-sizing: border-box;
-    z-index: 3;
   }
 
   .cooperation__map {
     height: 412px;
+    z-index: 1;
   }
 
   .cooperation__address {
