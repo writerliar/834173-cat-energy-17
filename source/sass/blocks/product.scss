@@ -7,6 +7,11 @@
 
   &--extra {
     flex-direction: column;
+    padding: 0;
+  }
+
+  &--extra .product__button {
+    margin: 0;
   }
 }
 
@@ -42,7 +47,8 @@
   text-transform: uppercase;
 
   &--extra {
-    margin-bottom: 13px;
+    //margin-left: 3px;
+    margin-bottom: 11px;
     max-width: 100%;
   }
 }
@@ -68,6 +74,11 @@
 
     &--extra {
       flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &--extra .product__button {
+      width: 100%;
     }
   }
 
@@ -99,7 +110,7 @@
     text-align: center;
 
     &--extra {
-      width: auto;
+      max-width: 50%;
       margin: 0;
       margin-bottom: 26px;
     }

@@ -2,6 +2,8 @@
   display: flex;
   height: 290px;
 
+  margin: 0 20px;
+
   text-align: center;
 
   background-color: #68b738;
@@ -12,12 +14,14 @@
 }
 
 .special-offer__description {
+  position: relative;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 43px;
   padding: 0;
-  width: 160px;
+  padding-top: 122px;
+  width: 165px;
 
   font-style: normal;
   font-weight: 400;
@@ -26,24 +30,51 @@
   font-family: "Arial", sans-serif;
   color: #ffffff;
   text-align: center;
+
+  &::before {
+    content: url("../../img/icon-gift.svg");
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 56px;
+    height: 61px;
+    transform: translateX(-50%);
+  }
 }
 
 @media (min-width: 768px) {
   .special-offer {
+    display: flex;
+    justify-content: flex-end;
     height: 200px;
+    margin: 0;
+    background-image: url("../../img/gift-photo-tablet@1x.jpg");
   }
+}
 
+@media (min-width: 768px) and (max-width: 1299px) {
   .special-offer__description {
-    margin-right: 155px;
+    margin-top: 72px;
+    margin-right: 120px;
     margin-bottom: auto;
+    margin-left: 91px;
+    padding-top: 0;
+    padding-left: 305px;
     text-align: left;
+
+    &::before {
+      top: -7px;
+      left: 0;
+    }
   }
 }
 
 @media (min-width: 1300px) {
   .special-offer {
-    min-width: 245px;
+    width: 245px;
     height: 290px;
+    background-image: url("../../img/gift-photo-desktop@1x.jpg");
   }
 
   .special-offer__description {

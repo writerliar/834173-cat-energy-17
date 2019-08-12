@@ -3,7 +3,11 @@
 
   &--extra {
     width: 100%;
-    margin-bottom: 14px;
+    margin-bottom: 15px;
+  }
+
+  &--extra .table__value {
+    font-size: 14px;
   }
 }
 
@@ -16,10 +20,10 @@
   font-family: "Arial", sans-serif;
   text-align: left;
   color: #444444;
-}
 
-.table__value:nth-child(2n) {
-  text-align: right;
+  &:nth-child(2n) {
+    text-align: right;
+  }
 }
 
 @media (min-width: 768px) {
@@ -28,17 +32,24 @@
 
     &--extra {
       width: auto;
+      margin-bottom: 0;
     }
+
+    &--extra .table__value {
+      font-size: 16px;
+      line-height: 20px;
+      border-bottom: none;
+    }
+  }
+
+  .table--extra .table__value:nth-child(2n) {
+    width: 95px;
   }
 
   .table__value {
     font-size: 16px;
     line-height: 29px;
     border-bottom: 1px solid rgba(68, 68, 68, 0.1);
-  }
-
-  .table--extra .table__value {
-    border-bottom: none;
   }
 }
 
@@ -51,5 +62,10 @@
   .table--extra + .product__button {
     width: 245px;
     margin-left: 39px;
+  }
+
+  .table--extra .table__value:nth-child(2n) {
+    text-align: left;
+    width: 44px;
   }
 }
