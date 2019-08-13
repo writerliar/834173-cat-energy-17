@@ -69,14 +69,21 @@
 
 @media (min-width: 1300px) {
   .extra-catalog {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 72px;
+  }
+
+  .extra-catalog__title-wrapper {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 72px;
   }
 
   .extra-catalog__wrapper {
     display: flex;
     justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .extra-catalog__title {
