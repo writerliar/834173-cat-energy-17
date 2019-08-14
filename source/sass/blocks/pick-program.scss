@@ -1,3 +1,9 @@
 .pick-program {
   margin-bottom: 34px;
 }
+
+@media (min-width: 768px) {
+  .pick-program {
+    margin-bottom: 72px;
+  }
+}
