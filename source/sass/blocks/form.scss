@@ -329,10 +329,24 @@
       width: 38px;
       height: 38px;
     }
+
+    &--mail {
+      margin-right: 19px;
+    }
+
+    &--phone {
+      margin-right: 11px;
+    }
   }
 
   .form__part--extra .form__wrapper {
     margin-bottom: 52px;
+    margin-right: 122px;
+    width: 222px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
   }
 
   .form__radio:checked + .form__label--radio::after {
@@ -506,9 +520,12 @@
     margin: 0 auto;
   }
 
-  .form__list--column .form__wrapper {
+  .form__part--extra .form__wrapper {
     margin-right: 103px;
-    width: 222px;
+
+    &:nth-child(2n) {
+      margin-right: 103px;
+    }
 
     &:last-child {
       margin-right: 0;
