@@ -63,7 +63,7 @@
 .form__label {
   flex-shrink: 0;
   margin-top: 14px;
-  margin-right: 14px;
+  margin-right: 16px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -508,10 +508,6 @@
 
   .form__part--owner .form__wrapper {
     width: 570px;
-  }
-
-  .form__label:not(.form__label--mail):not(.form__label--phone) {
-    margin-right: 16px;
   }
 
   .form__message {
