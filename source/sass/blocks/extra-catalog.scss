@@ -1,30 +1,35 @@
 .extra-catalog {
-  margin: 0 20px;
-  margin-bottom: 39px;
+  position: relative;
+  margin-bottom: 34px;
 }
 
 .extra-catalog__title {
   margin: 0;
-  margin-bottom: 75px;
-  padding: 30px 0;
+  margin-bottom: 34px;
+  padding-right: 22px;
+  padding-left: 20px;
 }
 
 .extra-catalog__list {
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 0 20px;
+  margin-bottom: 39px;
   padding: 0;
 
   list-style: none;
 }
 
 .extra-catalog__product {
-  padding-top: 14px;
+  padding-top: 11px;
   padding-bottom: 17px;
-  border-bottom: 1px solid #ededed;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .extra-catalog__item:first-child .extra-catalog__product {
-  border-top: 1px solid #ededed;
+  border-top: 1px solid #cdcdcd;
+}
+
+.extra-catalog__characteristics {
+  border-collapse: collapse;
 }
 
 @media (min-width: 768px) {
@@ -33,37 +38,69 @@
     margin-bottom: 76px;
   }
 
+  .extra-catalog__wrapper {
+    //margin: 0 30px;
+    position: relative;
+  }
+
+  .extra-catalog__title {
+    //margin-top: 34px;
+    margin-bottom: 80px;
+  }
+
   .extra-catalog__list {
+    margin: 0;
     margin-bottom: 69px;
   }
 
   .extra-catalog__product {
-    padding: 28px 38px;
-    border-right: 1px solid #ededed;
-    border-left: 1px solid #ededed;
+    padding-top: 25px;
+    padding-right: 36px;
+    padding-bottom: 27px;
+    padding-left: 37px;
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+  }
+
+  .extra-catalog__characteristics {
+    margin-top: 5px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1300px) {
   .extra-catalog {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 72px;
+  }
+
+  .extra-catalog__title-wrapper {
     width: 1220px;
     margin: 0 auto;
-    margin-bottom: 86px;
   }
 
   .extra-catalog__wrapper {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .extra-catalog__title {
+    margin-left: -38px;
   }
 
   .extra-catalog__list {
-    width: 100%;
+    min-width: 895px;
     margin-right: 80px;
     margin-bottom: 0;
   }
 
   .extra-catalog__product {
-    padding: 13px 0;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 16px;
+    padding-left: 0;
     border-right: none;
     border-left: none;
   }

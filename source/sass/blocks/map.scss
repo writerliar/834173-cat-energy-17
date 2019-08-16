@@ -1,0 +1,37 @@
+.map {
+  position: relative;
+}
+
+.map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border: none;
+}
+
+.map__image {
+  position: relative;
+  max-height: 360px;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .map iframe {
+    height: 402px;
+  }
+
+  .map__image {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .map iframe {
+    height: 412px;
+  }
+
+  .map__image {
+    max-height: 412px;
+  }
+}

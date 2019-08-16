@@ -10,3 +10,10 @@
   text-align: left;
   color: #111111;
 }
+
+@media (min-width: 768px) {
+  .simple-title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
