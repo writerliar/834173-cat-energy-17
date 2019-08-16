@@ -464,7 +464,7 @@
     margin-bottom: 48px;
 
     &--cat-info {
-      width: 680px;
+      width: 675px;
       padding: 0;
       margin: 0;
       margin-right: 80px;
@@ -473,7 +473,10 @@
     &--program {
       width: 610px;
       margin: 0;
-      padding: 35px 30px;
+      padding-top: 35px;
+      padding-left: 25px;
+      padding-bottom: 35px;
+      padding-right: 25px;
       border: 1px solid #ededed;
     }
   }
@@ -505,6 +508,10 @@
 
   .form__part--owner .form__wrapper {
     width: 570px;
+  }
+
+  .form__label:not(.form__label--mail):not(.form__label--phone) {
+    margin-right: 16px;
   }
 
   .form__message {
