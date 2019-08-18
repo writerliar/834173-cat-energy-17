@@ -32,7 +32,11 @@
 <header class="page-header page-header--inner">
   <div class="page-header__wrapper">
     <a href="index.html" class="page-header__logo">
-      <img src="img/logo-mobile.svg" alt="Cat Energy: функциональное питание для котов" class="page-header__logo-image" width="191" height="39">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Cat Energy: функциональное питание для котов" class="page-header__logo-image" width="191" height="31">
+      </picture>
     </a>
     <nav class="page-header__navigation navigation navigation--inner navigation--closed navigation--nojs">
       <button class="navigation__button"><span class="visually-hidden">Открыть меню</span></button>
