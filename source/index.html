@@ -26,7 +26,11 @@
 <header class="page-header">
   <div class="page-header__wrapper">
     <a href="#" class="page-header__logo">
-      <img src="img/logo-mobile.svg" alt="Cat Energy: функциональное питание для котов" class="page-header__logo-image" width="191" height="31">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img src="img/logo-mobile.svg" alt="Cat Energy: функциональное питание для котов" class="page-header__logo-image" width="191" height="31">
+      </picture>
     </a>
     <nav class="page-header__navigation navigation navigation--closed navigation--nojs">
       <button class="navigation__button"><span class="visually-hidden">Открыть меню</span></button>
@@ -56,9 +60,11 @@
           <a href="form.html" class="banner__button button">Подобрать программу</a>
         </div>
         <div class="banner__image-wrapper">
-          <img src="img/index-can-mobile@1x.png" alt="Cat Energy Pro с курицей" class="banner__demo" width="280" height="271">
-<!--          <img src="img/index-can-tablet@1x.jpg" alt="Cat Energy Pro с курицей" class="banner__demo" width="709" height="609">-->
-<!--          <img src="img/index-can-desktop@1x.png" alt="Cat Energy Pro с курицей" class="banner__demo" width="552" height="499">-->
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+            <img src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" alt="Cat Energy Pro с курицей" class="banner__demo">
+          </picture>
         </div>
       </div>
     </section>
@@ -121,12 +127,16 @@
         <div class="living-example__background">
           <div class="living-example__slider">
             <div class="living-example__demo">
-              <img src="img/before-mobile@1x.png" alt="Борис ДО программы был котиком с очень пушистой костью" class="living-example__slide living-example__slide--before living-example__slide--active" width="320" height="240">
-<!--              <img src="img/before-tablet@1x.png" alt="Борис ДО программы был котиком с очень пушистой костью" class="living-example__slide living-example__slide&#45;&#45;before living-example__slide&#45;&#45;active" width="690" height="517">-->
-<!--              <img src="img/before-desktop@1x.png" alt="Борис ДО программы был котиком с очень пушистой костью" class="living-example__slide living-example__slide&#45;&#45;before living-example__slide&#45;&#45;active" width="690" height="517">-->
-              <img src="img/after-mobile@1x.png" alt="А после нашей программы стал котиком очень спортивного сложения" class="living-example__slide living-example__slide--after" width="320" height="240">
-<!--              <img src="img/after-tablet@1x.png" alt="А после нашей программы стал котиком очень спортивного сложения" class="living-example__slide living-example__slide&#45;&#45;after" width="690" height="517">-->
-<!--              <img src="img/after-desktop@1x.png" alt="А после нашей программы стал котиком очень спортивного сложения" class="living-example__slide living-example__slide&#45;&#45;after" width="690" height="517">-->
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Борис ДО программы был котиком с очень пушистой костью" class="living-example__slide living-example__slide--before living-example__slide--active">
+              </picture>
+              <picture>
+                <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="А после нашей программы стал котиком очень спортивного сложения" class="living-example__slide living-example__slide--after">
+              </picture>
             </div>
             <div class="living-example__toggle toggle">
               <button class="toggle__button">Было</button>
