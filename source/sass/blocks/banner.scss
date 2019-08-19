@@ -11,6 +11,12 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image:
+      url("../../img/index-background-mobile@2x.jpg"),
+      linear-gradient(to bottom, #68b738 64%, #ffffff 36%);
+  }
 }
 
 .banner-container {
@@ -147,6 +153,10 @@
     background-color: transparent;
     background-image: url("../../img/index-background-desktop@1x.jpg");
     background-size: contain;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .banner__wrapper-column {
@@ -173,7 +183,7 @@
   }
 
   .banner__image-wrapper img {
-    top: -80px;
+    top: -85px;
     left: -50px;
     transform: none;
   }
