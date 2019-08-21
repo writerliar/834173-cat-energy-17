@@ -50,7 +50,7 @@
   }
 
   &--slim::after {
-    content: url("../../img/icon-cat-slim.svg");
+    content: url("../img/icon-cat-slim.svg");
     top: -9px;
     left: 10px;
     width: 35px;
@@ -58,7 +58,7 @@
   }
 
   &--mass::after {
-    content: url("../../img/icon-cat-pro.svg");
+    content: url("../img/icon-cat-pro.svg");
     top: 3px;
     left: -7px;
     width: 67px;
@@ -99,7 +99,7 @@
   transition: all 0.3s;
 
   &--arrow::after {
-    content: url("../../img/icon-right-arrow-long.svg");
+    content: url("../img/icon-right-arrow-long.svg");
     position: absolute;
     top: 18px;
     left: 97px;
@@ -109,7 +109,7 @@
   }
 
   &--arrow:hover::after {
-    content: url("../../img/icon-right-arrow-verylong.svg");
+    content: url("../img/icon-right-arrow-verylong.svg");
     width: 34px;
   }
 
