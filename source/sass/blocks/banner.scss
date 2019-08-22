@@ -4,23 +4,19 @@
 
   text-align: center;
 
-  background-color: #68b738;
-  background-image:
-    url("../../img/index-background-mobile@1x.jpg"),
-    linear-gradient(to bottom, #68b738 64%, #ffffff 36%);
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image:
-      url("../../img/index-background-mobile@2x.jpg"),
-      linear-gradient(to bottom, #68b738 64%, #ffffff 36%);
+    background-image: url("../img/index-background-mobile@2x.jpg");
   }
 }
 
 .banner-container {
   margin-bottom: 27px;
+  background-image: linear-gradient(to bottom, #68b738 64%, #ffffff 36%);
 }
 
 .banner__title {
@@ -77,6 +73,10 @@
 
 @media (min-width: 768px) and (max-width: 1299px) {
   .banner {
+    background: none;
+  }
+
+  .banner-container {
     background: none;
   }
 }
@@ -151,11 +151,11 @@
     margin-left: auto;
     background-position: right;
     background-color: transparent;
-    background-image: url("../../img/index-background-desktop@1x.jpg");
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-size: contain;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/index-background-desktop@2x.jpg");
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 
