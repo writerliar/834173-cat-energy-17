@@ -159,6 +159,11 @@
   transform: rotate(-49deg);
 }
 
+.form__radio:focus + .form__label--radio::before,
+.form__checkbox:focus + .form__label--checkbox::before {
+  box-shadow: 0 0 5px #111111;
+}
+
 .form__part--extra .form__wrapper {
   margin-bottom: 25px;
 
@@ -188,9 +193,9 @@
 
   transition: all 0.3s;
 
-  &--icon {
-    padding-right: 40px;
-  }
+  //&--icon {
+  //  padding-right: 40px;
+  //}
 
   &:hover {
     border-color: #cdcdcd;

@@ -6,12 +6,9 @@
   }
 }
 
-.cooperation__wrapper {
-  //justify-content: space-between;
-}
-
 .cooperation__card {
   display: flex;
+  justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 26px;
   margin: 0 20px;
@@ -19,7 +16,6 @@
 
 .cooperation__invite {
   margin: 0;
-  margin-right: 16px;
   padding: 0;
   width: 125px;
 
@@ -34,6 +30,7 @@
 
 .cooperation__address {
   margin: 0;
+  margin-right: 5px;
   padding: 0;
   width: 135px;
 

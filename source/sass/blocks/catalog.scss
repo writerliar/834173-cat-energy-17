@@ -30,6 +30,14 @@
   border: 1px solid #ededed;
 }
 
+.catalog__item {
+  order: 1;
+
+  &--toggle {
+    order: 2;
+  }
+}
+
 @media (min-width: 768px) {
   .catalog {
     margin-top: 34px;
