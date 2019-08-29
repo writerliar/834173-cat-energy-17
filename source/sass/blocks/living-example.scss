@@ -240,20 +240,25 @@
     margin: 0 auto;
   }
 
+  .living-example__lost-wrapper {
+    margin-bottom: 0;
+    margin-right: 65px;
+    width: 431px;
+  }
+
   .living-example__title {
     margin-bottom: 50px;
   }
 
-  .living-example__wrapper-column {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 55px;
-    //padding-top: 70px;
+  .living-example__background {
+    width: 50vw;
   }
 
-  .living-example__lost-wrapper {
-    margin-bottom: 0;
-    width: 431px;
+  .living-example__wrapper-column {
+    display: flex;
+    //justify-content: space-between;
+    padding-bottom: 55px;
+    //padding-top: 70px;
   }
 
   .living-example__text {
@@ -302,7 +307,7 @@
   .living-example__demo {
     margin-left: 0;
     margin-bottom: 41px;
-    width: 50vw;
+    width: 100%;
   }
 
   .living-example__slide {
@@ -321,6 +326,6 @@
   .living-example__toggle {
     align-self: flex-end;
     margin: 0;
-    width: 571px;
+    width: 565px;
   }
 }
