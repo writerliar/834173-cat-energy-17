@@ -242,16 +242,12 @@
 
   .living-example__lost-wrapper {
     margin-bottom: 0;
-    margin-right: 65px;
+    margin-right: 130px;
     width: 431px;
   }
 
   .living-example__title {
     margin-bottom: 50px;
-  }
-
-  .living-example__background {
-    width: 50vw;
   }
 
   .living-example__wrapper-column {
@@ -295,6 +291,7 @@
   .living-example__background {
     margin: 0;
     padding: 0;
+    width: 50%;
     background-image: none;
   }
 
@@ -307,7 +304,7 @@
   .living-example__demo {
     margin-left: 0;
     margin-bottom: 41px;
-    width: 100%;
+    width: 700px;
   }
 
   .living-example__slide {
@@ -315,11 +312,11 @@
     margin-left: 0;
 
     &--before {
-      clip: rect(auto 362px auto auto);
+      clip: rect(auto 365px auto auto);
     }
 
     &--after {
-      clip: rect(auto auto auto 362px);
+      clip: rect(auto auto auto 365px);
     }
   }
 
