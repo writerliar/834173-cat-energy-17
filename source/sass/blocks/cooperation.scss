@@ -72,10 +72,10 @@
   .cooperation__wrapper {
     position: absolute;
     top: 107px;
-    left: 50%;
+    right: 50%;
     width: 1220px;
     z-index: 2;
-    transform: translateX(-50%);
+    transform: translateX(50%);
   }
 
   .cooperation__card {
