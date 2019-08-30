@@ -1,6 +1,5 @@
 .product__wrapper {
   display: flex;
-  //flex-wrap: wrap;
   justify-content: space-between;
   padding-left: 19px;
   padding-right: 14px;
@@ -40,14 +39,12 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
   text-align: left;
   color: #111111;
 
   text-transform: uppercase;
 
   &--extra {
-    //margin-left: 3px;
     margin-bottom: 11px;
     max-width: 100%;
   }
@@ -55,11 +52,9 @@
 
 .product__characteristics {
   margin-right: 2px;
-  //margin-bottom: 23px;
 }
 
 .product__button {
-  //width: 100%;
   padding: 10px;
   margin: 0 19px;
   font-size: 16px;
@@ -69,7 +64,6 @@
 @media (min-width: 768px) {
   .product__wrapper {
     flex-direction: column;
-    //align-items: center;
     padding: 0;
 
     &--extra {
@@ -89,7 +83,6 @@
       display: flex;
       align-items: flex-end;
       align-self: center;
-      //min-width: 324px;
       min-height: 207px;
       margin-bottom: 17px;
     }

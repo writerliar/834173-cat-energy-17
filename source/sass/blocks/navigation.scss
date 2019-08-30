@@ -75,10 +75,6 @@
   background-color: #ffffff;
 }
 
-//.navigation__item:last-child {
-//  border-bottom: 1px solid #e7e7e7;
-//}
-
 @media (max-width: 767px) {
   .navigation--nojs .navigation__button {
     display: none;
@@ -128,7 +124,6 @@
     padding-left: 0;
     padding-bottom: 7px;
     padding-right: 0;
-    font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;

@@ -46,7 +46,6 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  font-family: "Oswald", "Arial", sans-serif;
   color: #111111;
   text-transform: uppercase;
   text-align: center;
@@ -86,7 +85,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
   color: #111111;
   text-transform: uppercase;
   text-align: center;
@@ -202,7 +200,6 @@
   .living-example__demo {
     margin: 0;
     margin-top: -167px;
-    //margin-left: 13px;
     margin-bottom: 16px;
     height: 515px;
   }
@@ -252,9 +249,7 @@
 
   .living-example__wrapper-column {
     display: flex;
-    //justify-content: space-between;
     padding-bottom: 55px;
-    //padding-top: 70px;
   }
 
   .living-example__text {
@@ -296,7 +291,6 @@
   }
 
   .living-example__slider {
-    //height: 400px;
     margin: 0;
     text-align: center;
   }
