@@ -44,7 +44,7 @@
   <p class="page-content__motivation">Заполните анкету и мы подберем<br> программу питания для вашего кота</p>
   <section class="pick-program">
     <h2 class="visually-hidden">Заполните, пожалуйста, форму:</h2>
-    <form action="https://echo.htmlacademy.ru" class="pick-program__form form" method="get">
+    <form action="https://echo.htmlacademy.ru" class="pick-program__form form" method="post">
       <div class="form__column">
         <fieldset class="form__part form__part--cat-info">
           <h3 class="visually-hidden">Информация о вашем коте:</h3>
@@ -95,7 +95,7 @@
           </li>
           <li class="form__wrapper">
             <label for="owner-tel" class="form__label form__label--icon form__label--phone">Телефон:*</label>
-            <input type="tel" class="form__input form__input--icon form__input--phone" id="owner-tel" name="tel" placeholder="8 (960) 900-60-90" value="8 (960) 900-60-90" required>
+            <input type="tel" class="form__input form__input--icon form__input--phone" id="owner-tel" name="tel" placeholder="8 (960) 900-60-90" value="8 (960) 900-60-90" pattern="8 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
             <svg class="form__icon form__icon--phone" width="20" height="20">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>

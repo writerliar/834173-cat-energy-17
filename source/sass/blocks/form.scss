@@ -273,8 +273,7 @@
 
 @media (min-width: 768px) {
   .form__part {
-    margin-left: 70px;
-    margin-right: 66px;
+    margin: 0;
 
     &--cat-info {
       margin-bottom: 53px;
@@ -294,8 +293,15 @@
     }
   }
 
+  .form__title-wrapper {
+    margin-left: 70px;
+    margin-right: 66px;
+  }
+
   .form__list {
     margin: 0;
+    margin-left: 70px;
+    margin-right: 66px;
   }
 
   .form__wrapper {
@@ -376,10 +382,6 @@
     margin-bottom: 75px;
     padding: 0 40px;
     max-width: 100%;
-  }
-
-  .form__title::before {
-    left: -70px;
   }
 
   .form__part--extra .form__title {

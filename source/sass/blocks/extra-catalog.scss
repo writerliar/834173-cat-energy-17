@@ -34,12 +34,17 @@
 
 @media (min-width: 768px) {
   .extra-catalog {
-    margin: 0 30px;
+    margin: 0;
     margin-bottom: 76px;
+  }
+
+  .extra-catalog__title-wrapper {
+    margin: 0 30px;
   }
 
   .extra-catalog__wrapper {
     position: relative;
+    margin: 0 30px;
   }
 
   .extra-catalog__title {
