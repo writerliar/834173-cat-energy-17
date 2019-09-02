@@ -131,7 +131,6 @@
     padding-bottom: 0;
     border-top: 1px solid #f2f2f2;
     background-color: #ffffff;
-    background-image: linear-gradient(to bottom, #ffffff 57%, #f2f2f2 43%);
   }
 
   .living-example__wrapper {
@@ -193,16 +192,29 @@
   }
 
   .living-example__background {
+    position: relative;
     padding-bottom: 68px;
     margin: 0 -30px;
     margin-top: -167px;
+    background-image: linear-gradient(to bottom, #ffffff 27%, #f2f2f2 27%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      height: 100%;
+      background-image: linear-gradient(to bottom, #ffffff 27%, #eaeaea 27%);
+    }
   }
 
   .living-example__demo {
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     height: 515px;
     width: 100%;
+    z-index: 2;
   }
 
   .living-example__slide {
@@ -224,11 +236,13 @@
     width: auto;
     margin: 0 99px;
     align-self: stretch;
+    z-index: 2;
   }
 }
 
 @media (min-width: 1300px) {
   .living-example {
+    position: relative;
     padding: 0;
     border: none;
     background-image: linear-gradient(to top, #f2f2f2 77%, #ffffff 23%);
@@ -241,7 +255,7 @@
 
   .living-example__lost-wrapper {
     margin-bottom: 0;
-    margin-right: 130px;
+    margin-right: 85px;
     width: 431px;
   }
 
@@ -286,11 +300,17 @@
   }
 
   .living-example__background {
+    position: static;
     margin: 0;
     margin-top: -167px;
     padding: 0;
-    width: 50%;
+    width: 703px;
     background-image: none;
+
+    &::after {
+      width: 27.3%;
+      background-image: linear-gradient(to top, #eaeaea 77%, #ffffff 23%);
+    }
   }
 
   .living-example__slider {
@@ -302,7 +322,7 @@
     margin-left: 0;
     margin-bottom: 45px;
     margin-top: 0;
-    width: 700px;
+    width: 100%;
   }
 
   .living-example__slide {
@@ -319,7 +339,6 @@
   }
 
   .living-example__toggle {
-    right: -50px;
     align-self: flex-end;
     margin: 0;
     width: 570px;
