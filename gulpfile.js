@@ -52,7 +52,7 @@ gulp.task("html", function () {
       include()
     ]))
     .pipe(gulp.dest("build"))
-    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(htmlmin({}))
     .pipe(gulp.dest("build"))
 });
 

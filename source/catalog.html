@@ -331,7 +331,7 @@
     <div class="extra-catalog__wrapper">
       <ul class="extra-catalog__list">
         <li class="extra-catalog__item">
-          <article class="extra-catalog__product product">
+          <div class="extra-catalog__product product">
             <div class="product__wrapper product__wrapper--extra">
               <h3 class="product__name product__name--extra">Сахарозаменитель</h3>
               <table class="extra-catalog__characteristics table table--extra">
@@ -342,10 +342,10 @@
               </table>
               <a href="order-modal.html" class="button product__button">Заказать</a>
             </div>
-          </article>
+          </div>
         </li>
         <li class="extra-catalog__item">
-          <article class="extra-catalog__product product">
+          <div class="extra-catalog__product product">
             <div class="product__wrapper product__wrapper--extra">
               <h3 class="product__name product__name--extra">Питьевая вода</h3>
               <table class="extra-catalog__characteristics table table--extra">
@@ -356,10 +356,10 @@
               </table>
               <a href="order-modal.html" class="button product__button">Заказать</a>
             </div>
-          </article>
+          </div>
         </li>
         <li class="extra-catalog__item">
-          <article class="extra-catalog__product product">
+          <div class="extra-catalog__product product">
             <div class="product__wrapper product__wrapper--extra">
               <h3 class="product__name product__name--extra">Молоко</h3>
               <table class="extra-catalog__characteristics table table--extra">
@@ -370,10 +370,10 @@
               </table>
               <a href="order-modal.html" class="button product__button">Заказать</a>
             </div>
-          </article>
+          </div>
         </li>
         <li class="extra-catalog__item">
-          <article class="extra-catalog__product product">
+          <div class="extra-catalog__product product">
             <div class="product__wrapper product__wrapper--extra">
               <h3 class="product__name product__name--extra">Витамины</h3>
               <table class="extra-catalog__characteristics table table--extra">
@@ -384,7 +384,7 @@
               </table>
               <a href="order-modal.html" class="button product__button">Заказать</a>
             </div>
-          </article>
+          </div>
         </li>
       </ul>
       <article class="extra-catalog__special-offer special-offer">
@@ -405,13 +405,24 @@
     </div>
     <div class="cooperation__map map">
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad6bb002968a99281e2c972d6dd8f53a1a72a769ed3d19aca2bba964c2d7e42ab&amp;source=constructor" height="362"></iframe>
-      <img src="img/bg-map-mobile@1x.png" alt="Мы находимся по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="map__image" width="320" height="400">
+      <picture>
+        <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+        <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Мы находимся по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" class="map__image">
+      </picture>
     </div>
   </section>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
-    <a href="#" class="page-footer__logo-footer"><img src="img/logo-footer.svg" alt="Cat Energy" width="128" height="24"></a>
+    <a href="#" class="page-footer__logo-footer">
+      <svg width="128" height="24" aria-label="Cat Energy">
+        <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
+      </svg>
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item">
