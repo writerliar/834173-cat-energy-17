@@ -6,12 +6,9 @@
   }
 }
 
-.cooperation__wrapper {
-  //justify-content: space-between;
-}
-
 .cooperation__card {
   display: flex;
+  justify-content: space-between;
   padding-top: 28px;
   padding-bottom: 26px;
   margin: 0 20px;
@@ -19,7 +16,6 @@
 
 .cooperation__invite {
   margin: 0;
-  margin-right: 16px;
   padding: 0;
   width: 125px;
 
@@ -27,13 +23,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
   color: #111111;
   text-transform: uppercase;
 }
 
 .cooperation__address {
   margin: 0;
+  margin-right: 5px;
   padding: 0;
   width: 135px;
 
@@ -76,21 +72,13 @@
   .cooperation__wrapper {
     position: absolute;
     top: 107px;
-    left: 50%;
+    right: 50%;
     width: 1220px;
     z-index: 2;
-    transform: translateX(-50%);
-  }
-
-  .cooperation__inner .cooperation__wrapper {
-    //top: 94px;
+    transform: translateX(50%);
   }
 
   .cooperation__card {
-    //position: absolute;
-    //top: 107px;
-    //left: 0;
-    //bottom: 104px;
     padding-left: 76px;
     padding-top: 65px;
     padding-right: 90px;
