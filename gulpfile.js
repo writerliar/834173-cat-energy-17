@@ -38,7 +38,7 @@ gulp.task("sprite", function () {
   return gulp.src("source/img/icon-*.svg")
 
     .pipe(svgstore({
-      inlineSVG: true
+      inlineSvg: true
     }))
 
     .pipe(rename("sprite.svg"))

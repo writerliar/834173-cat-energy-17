@@ -101,6 +101,7 @@
   .navigation__list {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     width: auto;
   }
 
